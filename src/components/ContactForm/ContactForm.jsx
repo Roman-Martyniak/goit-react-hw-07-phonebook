@@ -5,8 +5,8 @@ import { addContact } from '../../redux/contactsOperations';
 
 export const ContactForm = () => {
   const contacts = useSelector(state => state.contacts.items);
-  const nameInputIdFirst = shortid.generate();
-  const nameInputIdSecond = shortid.generate();
+  // const nameInputIdFirst = shortid.generate();
+  // const nameInputIdSecond = shortid.generate();
 
   const dispatch = useDispatch();
 
