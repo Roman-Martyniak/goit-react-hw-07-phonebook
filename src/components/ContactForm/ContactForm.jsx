@@ -1,12 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
-import shortid from 'shortid';
 import { Form, Label, Input, Span, Button } from './ContactForm.styled';
 import { addContact } from '../../redux/contactsOperations';
 
 export const ContactForm = () => {
   const contacts = useSelector(state => state.contacts.items);
-  // const nameInputIdFirst = shortid.generate();
-  // const nameInputIdSecond = shortid.generate();
 
   const dispatch = useDispatch();
 
